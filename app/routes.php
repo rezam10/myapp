@@ -11,8 +11,7 @@
 |
 */
 Route::get('/', function(){
-	$users = DB::table('users')->get();
-	return $users;
+	var_dump(App::environment());
 });
 //Route::get('/', 'HomeController@getIndex');
 Route::get('about', 'HomeController@getAbout');
