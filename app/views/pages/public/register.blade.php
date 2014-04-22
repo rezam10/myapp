@@ -50,7 +50,7 @@
 </div>
 
 <script type="text/javascript">
-  $(function(){ 
+ /* $(function(){ 
     $("#register").on("submit", function(e){
           e.preventDefault(); 
           var results = ''; 
@@ -64,7 +64,7 @@
                       results += '<li>'+this+'</li>';});             
                   $("#results").addClass("alert alert-danger").html('<ul>'+results+'</ul>');                  
                 }
-}); }); });
+}); }); });*/
 </script>
 
 @stop

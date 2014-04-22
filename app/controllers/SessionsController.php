@@ -53,13 +53,12 @@ class SessionsController extends \BaseController {
 	{
 
 		$input = Input::all();
-		
 		$rules = array('username' => 'required|min:6', 'email' => 'required|email', 'password' => 'required|min:6');
 
 		$v = Validator::make($input, $rules);
 		if ($v->fails()) {
 			if(Request::ajax()){return Response::json($v->errors()->toArray());}
-			return Redirect::to('register')->withErrors($v)->withInput();
+			return Redirect::back()->withErrors($v->errors())->withInput();
 		}else{
 			$userdate = array(
 							'username' => Input::get('username'),

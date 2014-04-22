@@ -10,11 +10,7 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
-Route::get('/', function(){
-	$users = DB::table('users')->get();
-	return $users;
-});
-//Route::get('/', 'HomeController@getIndex');
+Route::get('/', 'HomeController@getIndex');
 Route::get('about', 'HomeController@getAbout');
 Route::get('contact', 'HomeController@getContact');
 Route::get('login', 'SessionsController@getLogin');
