@@ -8,10 +8,10 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="#"><i style="color:#888;font-size:0.6em;" class="fa fa-cloud"></i><strong>Cloud<span style="color:#444;">Cardiology</span></strong></a>
+    <a class="brand" href="http://cloudcardiology.com.au"><img src="{{ asset('assets/images/logo-lemon.png')}} " class="img-responsive logo" alt="CloudCardiology_Sydney_Moazzeni"></a>
 </div>
 
-<!-- <a class="brand" href="http://cloudcardiology.com.au"><img src="{{ asset('assets/images/cloud2.png') }}" class="img-responsive logo" alt="CloudCardiology_Sydney_Moazzeni"></a> -->
+<!-- <a class="navbar-brand" href="#"><i style="color:#888;font-size:0.6em;" class="fa fa-cloud"></i><strong>Cloud<span style="color:#444;">Cardiology</span></strong></a> -->
 
 <div class="collapse navbar-collapse" id="my-navbar">
 	<ul class="nav nav-justified pull-right">
