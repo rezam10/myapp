@@ -8,7 +8,7 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="brand" href="http://cloudcardiology.com.au"><img src="{{ asset('assets/images/logo-lemon.png')}} " class="img-responsive logo" alt="CloudCardiology_Sydney_Moazzeni"></a>
+    <a class="brand" href="http://cloudcardiology.com.au"><img src="{{ asset('assets/images/logo3.png')}} " class="img-responsive logo" alt="CloudCardiology_Sydney_Moazzeni"></a>
 </div>
 
 <!-- <a class="navbar-brand" href="#"><i style="color:#888;font-size:0.6em;" class="fa fa-cloud"></i><strong>Cloud<span style="color:#444;">Cardiology</span></strong></a> -->
