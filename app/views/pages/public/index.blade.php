@@ -65,44 +65,38 @@
 	  	</section>  
 	</div><br/> -->
 
-	<div class="row row-no-negative-margin">
-	  	<section class="col-lg-12">  
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <a class="videoLink sublime" href="#video1" style="background-image:url('{{ asset('assets/images/amyloidosis.jpg') }}');">
-                  <img src="{{ asset('assets/images/play_icon.png') }}" alt="...">
-                </a>
-                <div class="caption">
-                  <h5><strong>Echocardiogram</strong></h5>
-                  <!-- <p><a href="#video1" class="sublime btn btn-primary btn-xs" role="button"><i class="fa fa-play-circle-o"></i> Play Video</a> <a href="#inline1" class="fancybox btn btn-default btn-xs">More Info</a></p> -->
-                </div>
-              </div>
-            </div>
+	<div class="row">
+	  	<section class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1"> 
+            
+              
+                <a class="videoLink sublime " href="#video1" videofile="amyloidosis" videocaption="Echocardiogram"></a>
+              
+            
 
 
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <a class="videoLink sublime" href="#video2" style="background-image:url('{{ asset('assets/images/angio7.jpg') }}');">
-                  <img src="{{ asset('assets/images/play_icon.png') }}" alt="...">
+            <!-- <div class="col-sm-6 col-md-4"> -->
+              
+                <a class="videoLink sublime" href="#video2" videofile="angio7" videocaption="Coronary Angiogram">
+                  
                 </a>
-                <div class="caption">
-                  <h5><strong>Coronary Angiogram</strong></h5>                 
+               <!--  <div class="caption"> -->
+                  <!-- <h5><strong>Coronary Angiogram</strong></h5> -->                 
                   <!-- <p><a href="#video2" class="sublime btn btn-primary btn-xs" role="button"><i class="fa fa-play-circle-o"></i> Play Video</a> <a href="#inline2" class="fancybox btn btn-default btn-xs" role="button">More Info</a></p> -->
-                </div>
-              </div>
-            </div>
+                <!-- </div> -->
+              
+            <!-- </div> -->
 
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <a class="videoLink sublime" href="#video3" style="background-image:url('{{ asset('assets/images/toe.jpg') }}');">
+            <!-- <div class="col-sm-6 col-md-4"> -->
+              <!-- <div class="thumbnail"> -->
+                <a class="videoLink sublime" href="#video3" videofile="toe" videocaption="Trans-Esophageal Echo">
                   <img src="{{ asset('assets/images/play_icon.png') }}" alt="...">
                 </a>
-                <div class="caption">
-                  <h5><strong>Trans-Esophageal Echo</strong></h5>                 
+                <!-- <div class="caption"> -->
+                  <!-- <h5><strong>Trans-Esophageal Echo</strong></h5> -->                 
                   <!-- <p><a href="#video3" class=" sublime btn btn-primary btn-xs" role="button"><i class="fa fa-play-circle-o"></i> Play Video</a> <a href="#inline3" class="fancybox btn btn-default btn-xs" role="button">More Info</a></p> -->
-                </div>
-              </div>
-            </div>
+                <!-- </div> -->
+              <!-- </div> -->
+            <!-- </div> -->
 	  	</section>
 	</div><!-- row -->
 

@@ -15,4 +15,16 @@ class AdminController extends BaseController {
 		return View::make('pages.admin.upload')->with(array('title' => 'CloudCardiology',
 															'description' => 'My Site Description'));
 	}
+
+	public function getEchoForm()
+	{
+		return View::make('pages.admin.echoform')->with(array('title' => 'CloudCardiology',
+															'description' => 'My Site Description'));
+	}
+
+	public function getEchoReports()
+	{
+		return View::make('pages.admin.echoreports')->with(array('title' => 'CloudCardiology',
+															'description' => 'My Site Description'));
+	}
 }

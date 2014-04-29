@@ -25,7 +25,8 @@ Route::group(array('before' => 'csrf'), function(){
 });
 
 Route::group(array('before' => 'auth'), function(){
-	
+	Route::get('echoreports', 'AdminController@getEchoReports');
+	Route::get('echoform', 'AdminController@getEchoForm');
 	Route::get('admin', 'AdminController@getIndex');
 	Route::get('upload', 'AdminController@getUpload');
 });
