@@ -1,5 +1,5 @@
 
-<a class="brand" href="http://cloudcardiology.com.au"><img src="{{ asset('assets/images/logo3.png')}} " class="img-responsive logo" alt="CloudCardiology_Sydney_Moazzeni"></a>
+<a class="brand" href="http://cloudcardiology.com.au"><img src="{{ asset('assets/images/logo3.png')}} " class="img-responsive" alt="CloudCardiology_Sydney_Moazzeni"></a>
 
 <nav class="navbar navbar-default" role="navigation">
 <div class="container-fluid">
@@ -18,7 +18,7 @@
 	  <li>{{ HTML::link('about', 'About')}}</li>
 	  <li>{{ HTML::link('contact', 'Contact')}}</li>
 	  @if(!Auth::check())
-	  	<li class=""><a href="{{url('login')}}" ><i class="fa fa-sign-in small"></i> Login</a></li>
+	  	<li class="pull-right login"><a href="{{url('login')}}" ><i class="fa fa-sign-in small"></i> Login</a></li>
 	  @else
 	  	<li>{{ HTML::link('admin', 'Admin Page')}}</li>
 	  	<li>{{ HTML::link('logout', 'Logout')}}</li>  	

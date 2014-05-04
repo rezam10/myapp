@@ -1,7 +1,7 @@
-<header class="masthead">
+
 <a class="brand" href="http://cloudcardiology.com.au"><img src="{{ asset('assets/images/logo3.png')}} " class="img-responsive logo" alt="CloudCardiology_Sydney_Moazzeni"></a>
-<button type="button" class="btn btn-danger navbar-btn navbar-right top-login">{{ HTML::link('logout', 'Logout')}}</button>
-<p class="btn btn-primary navbar-right top-login">Welcome <a href="#" class="navbar-link">{{ Auth::user()->username }}</a></p>
+
+<p class="btn btn-default navbar-right hidden-xs">Logged in as <a href="#" class="navbar-link">{{ Auth::user()->username }}</a></p>
 <nav class="navbar navbar-default" role="navigation">
 <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#my-navbar">
@@ -27,12 +27,12 @@
             <li><a href="#">Separated link</a></li>
           </ul>
       </li>
-
-      <li>{{ HTML::link('echoform', 'Echo Report')}}</li> 
+      <li>{{ HTML::link('echoform', 'Echo Report')}}</li>
+      <li class="pull-right login"><a href="{{url('logout')}}" ><i class="fa fa-sign-out small"></i> Logout</a></li> 
   </ul>
 </div>
 </nav>
-</header> 
+
 
 
 
