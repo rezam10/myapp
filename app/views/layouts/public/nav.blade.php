@@ -18,7 +18,7 @@
 	  <li>{{ HTML::link('about', 'About')}}</li>
 	  <li>{{ HTML::link('contact', 'Contact')}}</li>
 	  @if(!Auth::check())
-	  	<li class=""><a href="{{url('login')}}" ><span class="glyphicon glyphicon-log-in small blue"></span> Login</a></li>
+	  	<li class=""><a href="{{url('login')}}" ><i class="fa fa-sign-in small"></i> Login</a></li>
 	  @else
 	  	<li>{{ HTML::link('admin', 'Admin Page')}}</li>
 	  	<li>{{ HTML::link('logout', 'Logout')}}</li>  	

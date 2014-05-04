@@ -4,8 +4,7 @@
 <div class="row">
   <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
     <div class="blue-box">
-      <h4 class="title-divider">Login</h4>
-      <!-- <p class="alert alert-warning"><small>For staff use only. No public access.</small></p> -->	
+      <h4 class="title-divider"><span><i class="fa fa-sign-in"></i> Login</span></h4>
       {{ Form::open(array('url' => 'login', 'id' => 'login')) }}
       @if($errors->any())
       	<div class="alert alert-danger">

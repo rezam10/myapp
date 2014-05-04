@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="../../assets/ico/favicon.png">
     {{ HTML::script('//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js') }}
    <!-- HTML::style('http://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,700italic,400italic|Merienda+One') -->
-<script type="text/javascript" src="//use.typekit.net/cem7xlm.js"></script>
+    <script type="text/javascript" src="//use.typekit.net/xsk3yoq.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script> 
     {{ HTML::style('//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css') }}
     {{ HTML::style('assets/css/style.css') }}
