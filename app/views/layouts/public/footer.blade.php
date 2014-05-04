@@ -10,7 +10,7 @@ CloudCardiology</p>
 </section> <!-- /container -->
 {{ HTML::script('assets/source-fancybox/jquery.fancybox.js?v=2.1.5') }}
 {{ HTML::script('assets/source-fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5') }}
-{{ HTML::script('assets/js/bootstrap.min.js') }}
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 {{ HTML::script('assets/js/script.js') }}
 
 <script>

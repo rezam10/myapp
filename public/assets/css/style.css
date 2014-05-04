@@ -8,6 +8,11 @@ red: #8E2800;
 milky: #EFECCA;
 blue: #046380;
 Dark green: #002F2F;
+
+beautiful colors
+red-brown: #9C2A00 hover: #AF5433;
+green: #3BC492 hover: #62CFA7;
+blue: #228B9B hover: #4EA2AF;
 */
 
 body {
@@ -29,6 +34,11 @@ body {
     box-shadow: 1px 1px 5px #999;*/
   }
 }
+@media (min-width: 768px) {
+  .container-fluid {
+    padding: 0;
+  }
+}
 
 .btn {font-size: 16px; font-family: 'bree', serif;}
 
@@ -39,14 +49,7 @@ body {
 a:hover {text-decoration: none;}
 
 .blue {
-  color: #046380;
-}
-
-.top-login {
-  margin: 10px 5px 0 0;
-}
-.top-login a {
-  color: #FFF;
+  color: #4EA2AF;
 }
 
 img.logo {
@@ -57,19 +60,26 @@ img.gallery {
   margin: 0 auto;
 }
 
+img.banner-heart {
+  margin-left: 0px;
+  float: left;
+}
+
 h1,h2,h3,h4,h5 {
   font-family: 'ff-tisa-web-pro', cursive;
   color: #444;
 }
 .home-banner {
-    background: url('../images/seascape.jpg') no-repeat;
+    background: url('../images/spring-flower.jpg') no-repeat 0 0;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     height: 400px;
     margin-bottom: 2em;
     text-align: center;
-    border-bottom: 1px solid #888;
+    -webkit-box-shadow: 1px 1px 3px 1px #999;
+ box-shadow: 1px 1px 3px 1px #999;
+
 }
 .home-banner:before {
     content: "";
@@ -113,12 +123,14 @@ h1,h2,h3,h4,h5 {
 }
 nav.navbar-default,
 nav.navbar {
- background-color: #772318;
+ /*background-color: #772318;*/
  border: none;
- min-height: 2.3em;
+ min-height: 2em;
  margin-top: 20px;
+ margin-bottom: 40px;
  -webkit-box-shadow: 1px 1px 3px 1px #999;
  box-shadow: 1px 1px 3px 1px #999;
+ position: relative;
 }
 .nav-admin {
   background: #005d60;
@@ -134,49 +146,64 @@ nav.navbar {
   margin-top: 20px;
 }
 
-.nav-justified > li,
-.nav-justified > ul {
+/* to prevent mobile nav collapse */
+ul.nav-justified{
+    height: auto !important;
+    overflow: visible !important;
+}
+/* to hide side-bar on mobile nav*/
+.navbar-collapse.in {
+overflow-y: visible;
+}
+
+ul.nav-justified {
+    background: #384f66;
+    background: -moz-linear-gradient(top,  #384f66 0%, #062132 101%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#384f66), color-stop(101%,#062132));
+    background: -webkit-linear-gradient(top,  #384f66 0%,#062132 101%);
+    background: -o-linear-gradient(top,  #384f66 0%,#062132 101%);
+    background: -ms-linear-gradient(top,  #384f66 0%,#062132 101%);
+    background: linear-gradient(to bottom,  #384f66 0%,#062132 101%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#384f66', endColorstr='#062132',GradientType=0 );
+    width: 100%;
+    height: 2.2em;
+    border-radius: 4px;
+}
+
+.nav-justified > li {
   padding: 0;
   width: auto;
   list-style: none;
   float: left;
+  display: block;
+  position: relative;
+  height: 2.2em;
 }
-ul.nav-justified {
-    background: #5b2121;
-    background: -moz-linear-gradient(top,  #5b2121 0%, #3d1111 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5b2121), color-stop(100%,#3d1111));
-    background: -webkit-linear-gradient(top,  #5b2121 0%,#3d1111 100%);
-    background: -o-linear-gradient(top,  #5b2121 0%,#3d1111 100%);
-    background: -ms-linear-gradient(top,  #5b2121 0%,#3d1111 100%);
-    background: linear-gradient(to bottom,  #5b2121 0%,#3d1111 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b2121', endColorstr='#3d1111',GradientType=0 );
-    width: 100%;
-    height: 2.1em;
-    border-radius: 4px 4px 0 0;
+
+@media(max-width:767px){
+  .nav-justified > li {
+  float: none;
 }
+}
+
 .nav-justified > li > a {
     display: block;
     padding: 0 1em;
     line-height: 2.1em;
-    color: #FFF;
+    color: #C9D3D3;
     font-family: 'bree', serif;
-    border-right: solid 2px #441515;
+    position: relative;
 }
+
+
 .nav-justified > li > a:hover,
 .nav-justified > li > a:focus {
     color: #FFF;
-    background: #5b2121;
-    background: -moz-linear-gradient(top,  #5b2121 0%, #772318 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5b2121), color-stop(100%,#772318));
-    background: -webkit-linear-gradient(top,  #5b2121 0%,#772318 100%);
-    background: -o-linear-gradient(top,  #5b2121 0%,#772318 100%);
-    background: -ms-linear-gradient(top,  #5b2121 0%,#772318 100%);
-    background: linear-gradient(to bottom,  #5b2121 0%,#772318 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b2121', endColorstr='#772318',GradientType=0 );
-    height: 2.3em;
-    padding-top: 0.1em;
-    position: relative;
-    top: -.1em;
+    background: #092436;
+    -webkit-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease;
+    -o-transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease;
     border-radius: 4px 4px 0 0;
 }
 .nav-justified > .active > a,
@@ -234,13 +261,13 @@ a.navbar-brand {
 }
 
 .blue-box {
-  background: #FFF;
+  background: #F6F6F6;
   padding:10px 15px;
   overflow: hidden;
   margin-bottom: 15px;
   box-shadow: 1px 1px 5px #888;
   color: #333;
-  border-bottom: solid 5px #8E2800;
+  border-bottom: solid 1px #228B9B;
   font-family: 'droid-sans',sans-serif;
 }
 
@@ -252,13 +279,12 @@ a.navbar-brand {
 .blue-box h4 {
   color: #8E2800;
   font-weight: bold;
- /* font-style: italic;*/
 }
 
 #login-form {
     background: rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    color: #fff;
+    color: #C9D3D3;
     padding: 2em 4em;
     font-size: 0.9em;
     font-family: 'bree', serif;
@@ -272,19 +298,6 @@ a.navbar-brand {
 }
 
 .caption p { text-align: center; }
-
-.dark-black-box {
-  background: #00001c;
-  background: -moz-linear-gradient(-45deg,  #00001c 54%, #103f56 100%);
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(54%,#00001c), color-stop(100%,#103f56));
-  background: -webkit-linear-gradient(-45deg,  #00001c 54%,#103f56 100%);
-  background: -o-linear-gradient(-45deg,  #00001c 54%,#103f56 100%);
-  background: -ms-linear-gradient(-45deg,  #00001c 54%,#103f56 100%);
-  background: linear-gradient(135deg,  #00001c 54%,#103f56 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00001c', endColorstr='#103f56',GradientType=1 );
-
-
-}
 
 .form-control:focus {
   box-shadow: none;
@@ -376,18 +389,13 @@ address i {color: #B64926;}
 .center-text{ text-align: justify; }
 
 .btn-transparent {
-    background: rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: #002336;
     color: #fff;
     font-weight: 300;
 }
 .btn-transparent:hover {
-    background: #046380;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(0, 0, 0, 0.3);
     color: #fff;
-}
-.btn-transparent:active, .btn-transparent:focus {
-    background: -webkit-linear-gradient(top,  rgba(211, 73, 24, 0.5),  rgba(142, 49, 16, 0.5) 30%);
 }
 .home-login-error {
   color: #8E2800;
@@ -407,12 +415,14 @@ a.videoLink {
   position: relative;
   display: block;
   /*background:50% 50% no-repeat;*/
-  margin: 50px 66px 50px 66px;
+  margin: 20px 31px;
+  float: left;
   padding: 0;
   width: 160px;
   height: 114px;
-  float: left;
   background: #000 no-repeat 0 0;
+  border-radius: 6px;
+  border: solid 3px #045767;
 }
 a.videoLink img.play {
   position: absolute;
@@ -421,12 +431,13 @@ a.videoLink img.play {
 }
 a.videoLink div.caption{
   position: absolute;
-  width: 160px;
+  width: 154px;
   bottom: 0;
   padding: 15px 5px 10px 5px;
-  color: #FFF;
+  color: #C9D3D3;
   background-color: rgba(0,0,0,.5);
   font-size: 13px;
+  border-radius: 0 0 5px 5px;
 }
 .blue-box th, .blue-box td {
   text-align: center;
@@ -435,3 +446,4 @@ a.videoLink div.caption{
   color: #002F2F;
 }
 
+.btn-primary {@include buttonBackground(blue, red); }

@@ -14,7 +14,7 @@
    <!-- HTML::style('http://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,700italic,400italic|Merienda+One') -->
 <script type="text/javascript" src="//use.typekit.net/cem7xlm.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script> 
-    {{ HTML::style('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css') }}
+    {{ HTML::style('//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css') }}
     {{ HTML::style('assets/css/style.css') }}
     <link rel="stylesheet" type="text/css" href="assets/source-fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
     <link rel="stylesheet" type="text/css" href="assets/source-fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
