@@ -386,7 +386,8 @@ blockquote.address {
   font-family: 'bree-serif', Sans-serif;
   line-height: 1.6em;
   font-weight: bold;
-
+  color: #333;
+  
 }
 
 address > a { 
@@ -441,7 +442,7 @@ a.videoLink {
   height: 114px;
   background: #000 no-repeat 0 0;
   border-radius: 6px;
-  border: solid 3px #045767;
+  border: solid 3px #222;
 }
 a.videoLink img.play {
   position: absolute;
